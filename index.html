@@ -322,6 +322,53 @@
           </div>
         </div>
         <div class="content-main">
+          <!-- country stats -->
+          <div class="container-fluid">
+            <h3 class="page-title mt-3">Country Stats</h3>
+
+            <div class="row mt-3" id="countryStatCards">
+              <!-- load country cards -->
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 col-md-7 mb-3">
+                <div class="card chart-card">
+                  <h5 class="card-header">
+                    Coronavirus in <span id="countryName"></span>
+                  </h5>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div class="chart-container">
+                        <button
+                                id="toggle-map"
+                                class="toggle btn btn-outline-primary btn-primary-custom mb-3"
+                        >
+                          Chart
+                        </button>
+                        <div id="chart-container-country"></div>
+                        <div class="map active active-map d-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 mb-3">
+                <div class="card chart-card">
+                  <h5 class="card-header">
+                    Cases vs Recovered vs Active vs Deaths
+                  </h5>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div class="chart-container">
+                        <canvas class="pieChart-countrywide"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- world stats -->
+
           <div class="container-fluid">
             <h3 class="page-title">World Stats</h3>
 
@@ -357,54 +404,8 @@
               </div>
             </div>
           </div>
-
-          <!-- country stats -->
-          <div class="container-fluid">
-            <h3 class="page-title mt-3">Country Stats</h3>
-
-            <div class="row mt-3" id="countryStatCards">
-              <!-- load country cards -->
-            </div>
-            <div class="row mt-3">
-              <div class="col-12 col-md-7 mb-3">
-                <div class="card chart-card">
-                  <h5 class="card-header">
-                    Coronavirus in <span id="countryName"></span>
-                  </h5>
-                  <div class="card-body">
-                    <div class="chart-wrapper">
-                      <div class="chart-container">
-                        <button
-                          id="toggle-map"
-                          class="toggle btn btn-outline-primary btn-primary-custom mb-3"
-                        >
-                          Chart
-                        </button>
-                        <div id="chart-container-country"></div>
-                        <div class="map active active-map d-none"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-5 mb-3">
-                <div class="card chart-card">
-                  <h5 class="card-header">
-                    Cases vs Recovered vs Active vs Deaths
-                  </h5>
-                  <div class="card-body">
-                    <div class="chart-wrapper">
-                      <div class="chart-container">
-                        <canvas class="pieChart-countrywide"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="content-footer">2021 &copy; Covid 19 Reports</div>
+        <div class="content-footer"><a  style="margin-right: 3rem" target="_blank" href="https://github.com/rvsin8/COVID-19-DATA">Github</a> 2021 &copy; Covid 19 Reports</div>
       </div>
     </div>
     <!-- error toaster -->
