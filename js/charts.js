@@ -101,6 +101,7 @@ const toggleButtonOnClick = () => {
   const countryChart = document.getElementById('chart-container-country');
 
   toggleButton.addEventListener('click', () => {
+    window.dispatchEvent(new Event('resize'));
     countryChart.classList.toggle('d-none');
     map.classList.toggle('d-none');
     countryChart.classList.contains('active-chart')
